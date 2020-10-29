@@ -132,7 +132,7 @@ header .button {margin-top: 20px;}
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url('./imgs/hero__bg_1.jpg');
+  background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url('./imgs/bg-desktop-1.jpg');
   background-size: cover;
   animation: hero-animation 24s infinite linear;
 }
@@ -141,35 +141,36 @@ header .button {margin-top: 20px;}
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
 }
 
-.hero__content h1 {text-transform: uppercase; color: #fff;}
-.hero__content a {text-transform: uppercase; }
+.hero__content h1 {text-transform: uppercase; color: #fff; padding-right: 20px;}
+.hero__content a {text-transform: uppercase;}
+.hero__content a.button {margin-right: 20px;}
 
 @keyframes hero-animation {
   0% {
-    background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url(./imgs/hero__bg_1.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-desktop-1.jpg);
     background-size: cover;
   }
   33% {
-    background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url(./imgs/hero__bg_1.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-desktop-1.jpg);
     background-size: cover;
   }
   34% {
-    background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url(./imgs/hero__bg_2.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-desktop-2.jpg);
     background-size: cover;
   }
   66% {
-    background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url(./imgs/hero__bg_2.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-desktop-2.jpg);
     background-size: cover;
   }
   67% {
-    background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url(./imgs/hero__bg_3.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-desktop-3.jpg);
     background-size: cover;
   }
   100% {
-    background: linear-gradient(0deg, rgba(0,0,0, .2), rgba(0,0,0, .6)), url(./imgs/hero__bg_3.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-desktop-3.jpg);
     background-size: cover;
   }
 
@@ -192,7 +193,36 @@ header .button {margin-top: 20px;}
     text-align: center;
   }
   .hero__content a {font-size: 12px;}
+  @keyframes hero-animation {
+    0% {
+      background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-mobile-1.jpg);
+      background-size: cover;
+    }
+    33% {
+      background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-mobile-1.jpg);
+      background-size: cover;
+    }
+    34% {
+      background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-mobile-2.jpg);
+      background-size: cover;
+    }
+    66% {
+      background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-mobile-2.jpg);
+      background-size: cover;
+    }
+    67% {
+      background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-mobile-3.jpg);
+      background-size: cover;
+    }
+    100% {
+      background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url(./imgs/bg-mobile-3.jpg);
+      background-size: cover;
+    }
+  
+  }
+
 }
+
 
 @media (max-width: 1024px ) {
   .hero {  
@@ -219,9 +249,10 @@ header .button {margin-top: 20px;}
 .grid__post {flex-basis: 32%; padding: 0px 0px 15px 0px; background: #fff;text-align: center; box-shadow: 0 20px 20px rgba(0,0,0, .1); }
 .grid__post:hover {background:  #F8B5C1;}
 .grid__post img {width: 100%; height: auto;}
-.grid__post h3 {text-align: center; color: rgba(46, 25, 25, 0.8); text-transform: uppercase;}
+.grid__post h3 {text-align: center; color: rgba(46, 25, 25, 0.8); text-transform: uppercase; padding: 10px;}
 .grid__post p {text-align: justify; color: rgba(46, 25, 25, 0.8); padding: 12px;}
 .grid__post a {color: rgba(46, 25, 25, 0.8);}
+.grid__post a:hover {color: rgba(46, 25, 25, 0.8); font-weight: bold;}
 
 @media (max-width: 768px ) {
   .grid {margin: 50px auto}
@@ -251,7 +282,7 @@ header .button {margin-top: 20px;}
   width: 1280px;
 }
 
-.who__content__2 {flex-basis: 50%; background: url('./imgs/team.jpg');
+.who__content__2 {flex-basis: 50%; background: url('./imgs/chi-sono.jpg');
   background-size: cover;}
 .who__content__1 {flex-basis: 50%; text-align: center;padding-right: 25px;}
 .who__content__1 h2 {margin-top: 50px; margin-bottom: 50px;}
@@ -278,7 +309,7 @@ header .button {margin-top: 20px;}
 
 .grid__product {flex-basis: 32%; background: #fff; text-align: center; box-shadow: 0 20px 20px rgba(0,0,0, .1);}
 .grid__product:hover {background: #F8B5C1;}
-.grid__product img {width: 100%; height: auto;}
+.grid__product img {width: 100%; height: auto; padding: 10px;}
 .grid__product h3,
 .grid__product p {text-align: center; color: rgba(46, 25, 25, 0.8); padding: 10px;}
 
@@ -309,7 +340,7 @@ header .button {margin-top: 20px;}
   width: 1280px;
 }
 
-.mission__content__1 {flex-basis: 50%; background: url('./imgs/team.jpg'); background-size: cover;}
+.mission__content__1 {flex-basis: 50%; background: url('./imgs/network.jpg'); background-size: cover;}
 .mission__content__2 {flex-basis: 50%; text-align: center;padding-left: 25px;}
 .mission__content__2 h2 {margin-top: 50px; margin-bottom: 50px; }
 .mission__content__2 p {text-align: justify; margin: 30px; }
