@@ -132,7 +132,7 @@ header .button {margin-top: 20px;}
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url('./imgs/bg-desktop-1.jpg');
+  background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0,0,0, .6)), url('./imgs/bg-desktop-2.jpg'); 
   background-size: cover;
   animation: hero-animation 24s infinite linear;
 }
@@ -180,7 +180,7 @@ header .button {margin-top: 20px;}
 
 @media (max-width: 768px ) {
   .hero {  
-    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0, 0, 0, 0.6)), url('./imgs/heroBGmobile.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0, 0, 0, 0.6)), url('./imgs/bg-mobile-2.jpg'); 
     background-size: cover;
     display: flex; 
     align-items: center;
@@ -226,7 +226,7 @@ header .button {margin-top: 20px;}
 
 @media (max-width: 1024px ) {
   .hero {  
-    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0, 0, 0, 0.6)), url('./imgs/heroBGmobile.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0, .1), rgba(0, 0, 0, 0.6)), url('./imgs/bg-mobile-2.jpg');
     background-size: cover;
   }
   .hero__content { 
