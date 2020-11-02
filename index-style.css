@@ -328,8 +328,6 @@ header .button {margin-top: 20px;}
   padding: 10px 30px;
   margin-bottom: 100px;
   display: flex; 
- 
-  display: flex; 
   flex-wrap: wrap; 
   background: #F8D0D2;
 }

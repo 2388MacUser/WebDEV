@@ -1,0 +1,232 @@
+/*!  ------------------------ Base ------------------------  */
+* { margin: 0; padding: 0;}
+
+body{font-family: 'Heebo', sans-serif; font-size: 16px; background:  rgba(255, 255, 255, 0.884); padding: 0;}
+
+.big-text{font-size: 70px; font-weight: lighter;}
+.med-text{font-size: 45px;}
+.normal-text{font-size: 16px;}
+.small-text{font-size: 14px;}
+
+.intro-text {font-size: 25px; font-weight: lighter;}
+
+.button {
+  padding: 18px 28px; 
+  background: rgba(255, 255, 255, .8); 
+  color: rgba(46, 25, 25, 0.8); 
+  border: 1px solid rgba(46, 25, 25, 0.8); 
+  display: inline-block; 
+  border-radius: 25px;
+}
+.button:hover {
+  padding: 18px 28px; 
+  background:#FF5693; 
+  color: #fff; 
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  display: inline-block; 
+  border-radius: 25px; 
+}
+
+a {text-decoration: none; letter-spacing: 3px; }
+
+@media (max-width: 768px ) {
+  .big-text {font-size: 30px;}
+  .med-text{font-size: 20px;}
+  .normal-text{font-size: 16px;}
+  .small-text{font-size: 10px;}
+}
+
+
+
+
+
+
+/*!  ------------------------ Header ------------------------  */
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0px 30px;
+  display: flex; 
+  text-align: center;
+  transition: 0.5s ease;
+  height: 100px;
+  background: #FF5693;
+}
+
+header .button {margin-top: 20px;}
+  
+.header__container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+    height: 100px;
+}
+
+
+.header__logo {color: #fff; letter-spacing: 3px; padding: 0px; font-family: 'Ruthie', cursive; font-size: 32px;
+}
+.header__logo h2 {margin-top: 20px; text-align: left;}
+
+
+.header__menu {z-index: 0; width: 100%; text-align: right; padding: 15px 25px 10px 0px;}
+.header__menu li {display: inline-block; padding: 10px 25px 10px 25px; margin-top: 15px;}
+.header__menu li a {color: #fff; text-align: center; text-transform: uppercase; font-size: 18px;}
+.header__menu li a:hover {font-weight: bold;}
+
+.header__hamburger {display: none; }
+
+@media (max-width: 768px ) {
+
+  header .button{display: none;}
+
+  .header__menu {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    max-height: 0px;
+    overflow: hidden; 
+    transition: all 0.5s ease;
+  }
+
+  .header__logo h2 {margin-top: 25px;}
+
+  .header__menu--open {max-height: 570px; padding: 90px 0px 20px 0px; top: -16px; background: #FF5693; }
+  .header__menu--open li {display: block; padding: 30px; text-align: left;}
+  .header__menu--open li a {font-size: 20px;}
+ 
+  .header__hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    
+  }
+  .header__hamburger span {
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+}
+
+
+
+
+
+
+
+/*!  ------------------------ Articles ------------------------  */
+
+.articles {
+    border: solid 1px red;
+    width: 100%;
+    margin-top: 150px;
+    
+  }
+.articles__container {
+    /* border: solid 1px green; */
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.articles__post {
+    margin: 50px 0;
+    box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.articles__post:hover {
+    box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.6);
+}
+.articles__post h5 {
+    width: 100px;
+    margin-left: 55px;
+    padding: 5px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.articles__post h2 {
+    margin-top: -45px;
+    height: 200px;
+    padding: 65px 55px;
+    background: #ff569467;
+}
+
+.articles__post a {
+    color: #000;
+}
+.articles__post a:hover {
+   font-weight: bold;
+}
+
+.articles__post h4 {
+    padding: 5px;
+    min-height: 200px;
+    max-height: 100%;
+    font-weight: lighter;
+    padding: 20px 55px;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px ) {
+    .articles__post h5 {
+        width: 100px;
+        margin-left: 35px;
+    }
+    .articles__post h2 {
+        padding: 65px 35px;
+    }
+    .articles__post h4 {
+        padding: 35px 35px;
+
+    }
+}
+
+  
+  
+  
+  
+  
+  
+  /*!  ------------------------ Footer ------------------------  */
+  
+  
+  footer {
+    clear: both;
+    height: 120px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    border-top: 1px solid #FF5693;
+    text-align: center;
+  }
+  .footer__container .social {margin-top: 25px; margin-bottom: 15px;}
+  .footer__container p{ color: #fff; letter-spacing: 3px; margin: 0;}
+  .footer__container a{ color: #FF5693;}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ! Box Sizing */
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
