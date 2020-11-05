@@ -390,7 +390,7 @@ header .button {margin-top: 20px;}
   @media (max-width: 768px ) {
     footer {
       height: 120px;
-      position: sticky;
+      position: fixed;
       bottom: 0;
     }
     .footer__container p{ color: #fff; letter-spacing: 3px; margin: 0; font-style: 10px;} 
