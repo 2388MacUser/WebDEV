@@ -7,7 +7,7 @@
     $visitor_phone = $_POST['phone'];
     $message = $_POST['message'];
 
-    $email_from = 'cesaretto.diego@hotmail.it';
+    $email_from = 'dev-email@flywheel.local';
     $email_subject = "Nuova Submission dal sito";
     $email_body = "User Name: $name.\n".
                      "User Email: $email.\n".
