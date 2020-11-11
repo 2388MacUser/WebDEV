@@ -20,4 +20,11 @@ $ (document).ready(function() {
 
   });
 
+  $ (document).ready(function() {
+    $(".header__hamburger").on('click', function() {
+      $(".header-page__menu").toggleClass("header-page__menu--open");
+    })
+
+  });
+
 
