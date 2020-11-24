@@ -826,6 +826,68 @@ header .button {
 
 
 
+/*!  ------------------------ Article X Page ------------------------  */
+
+.article_body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  border: 1px solid green;
+}
+
+.article_body__title {
+  width: 100%;
+  height: 250px;
+  padding: auto;
+  background: #5e293d9a;
+
+}
+
+.title {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0;
+}
+
+.article_body h3 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.article_body h5 {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.article_body__container {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.article_body__container h6 {
+  padding: 20px 0;
+  font-weight: lighter;
+}
+
+.article_body__container h5 {
+  padding-top: 50px;
+  color: #000;
+}
+
+ .article__img {
+  width: 100%;
+  height: 300px;
+  background: url("../imgs/disciplina3.jpg");
+  background-size: cover;
+ }
+
 
 /*!  ------------------------ ABOUT Page ------------------------  */
 
